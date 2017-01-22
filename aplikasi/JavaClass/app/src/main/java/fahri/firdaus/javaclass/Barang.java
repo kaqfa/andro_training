@@ -6,6 +6,8 @@ package fahri.firdaus.javaclass;
 
 public class Barang {
 
+    public final static int ELEKTRONIK = 1;
+    public final static int NON_ELEKTRONIK = 2;
     private String nama;
     private int jenis;
     private int harga;
@@ -51,6 +53,6 @@ public class Barang {
 
     @Override
     public String toString() {
-        return "Nama: "+this.nama+" | Jenis: "+this.getJenisString()+" | Harga: "+this.harga;
+        return this.nama+" | "+this.getJenisString()+" | "+this.harga;
     }
 }

@@ -41,7 +41,8 @@ public class Transaksi {
 
     @Override
     public String toString() {
-        String string = "Kode Transaksi: "+this.kode+" | Jumlah Transaksi: "+this.items.size();
+        String string = "Kode: "+this.kode+" | Jumlah: "+this.items.size()+
+                        " item | Total: "+this.totalTransaksi();
         return string;
     }
 }
