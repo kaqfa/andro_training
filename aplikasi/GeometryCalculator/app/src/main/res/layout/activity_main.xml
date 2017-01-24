@@ -11,7 +11,80 @@
     tools:context="fahri.firdaus.geometrycalculator.MainActivity">
 
     <TextView
+        android:id="@+id/title_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:text="Pilih bangun:"
+        android:textSize="10pt"
+        android:textStyle="bold"/>
+
+    <Spinner
+        android:id="@+id/geo_opt"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@id/title_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/input1"
+        android:layout_below="@id/geo_opt"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_width="100dp"
+        android:inputType="numberDecimal"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/label1"
+        android:layout_below="@id/geo_opt"
+        android:layout_toLeftOf="@id/input1"
+        android:layout_toStartOf="@id/input1"
+        android:gravity="center_vertical"
+        android:layout_alignParentStart="true"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="Panjang"
+        android:textSize="10pt"
+        android:layout_alignParentLeft="true" />
+
+
+    <EditText
+        android:id="@+id/input2"
+        android:layout_below="@id/input1"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal" />
+    <TextView
+        android:id="@+id/label2"
+        android:layout_below="@id/input1"
+        android:layout_toLeftOf="@id/input2"
+        android:layout_toStartOf="@id/input2"
+        android:gravity="center_vertical"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="Lebar"
+        android:textSize="10pt"/>
+
+
+    <Button
+        android:layout_below="@id/input2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hitung"
+        android:onClick="calculate"
+        android:textSize="30sp"/>
+
+    <TextView
+        android:id="@+id/show_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/input2"
+        android:layout_marginTop="70dp"
+        android:text="0"
+        android:textSize="15pt"
+        android:textAlignment="center"/>
 </RelativeLayout>

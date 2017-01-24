@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">GeometryCalculator</string>
+    <string-array name="operators">
+        <item>Persegi</item>
+        <item>Lingkaran</item>
+        <item>Segi Tiga</item>
+    </string-array>
 </resources>
