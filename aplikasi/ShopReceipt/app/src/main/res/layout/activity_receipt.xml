@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_receipt"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:stretchColumns="0"
+    tools:context="fahri.firdaus.shopreceipt.ReceiptActivity">
+
+    <TableRow>
+        <TextView
+            android:text="TV Plasma"/>
+        <TextView
+            android:id="@+id/plasma2_num"
+            android:text="x 0"
+            android:paddingRight="20dp"/>
+        <TextView
+            android:id="@+id/plasma2_total"
+            android:width="100dp"
+            android:gravity="right"
+            android:text="5000000"/>
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:text="Microwave"/>
+        <TextView
+            android:id="@+id/microwave2_num"
+            android:text="x 0"
+            android:paddingRight="20dp"/>
+        <TextView
+            android:id="@+id/microwave2_total"
+            android:width="100dp"
+            android:gravity="right"
+            android:text="5000000"/>
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:text="Vacum Cleaner"/>
+        <TextView
+            android:id="@+id/vacum2_num"
+            android:text="x 0"
+            android:paddingRight="20dp"/>
+        <TextView
+            android:id="@+id/vacum2_total"
+            android:width="100dp"
+            android:gravity="right"
+            android:text="5000000"/>
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:text="Air Conditioner"/>
+        <TextView
+            android:id="@+id/ac2_num"
+            android:text="x 0"
+            android:paddingRight="20dp"/>
+        <TextView
+            android:id="@+id/ac2_total"
+            android:width="100dp"
+            android:gravity="right"
+            android:text="5000000"/>
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:text="Secure Camera"/>
+        <TextView
+            android:id="@+id/secure2_num"
+            android:text="x 0"
+            android:paddingRight="20dp"/>
+        <TextView
+            android:id="@+id/secure2_total"
+            android:width="100dp"
+            android:gravity="right"
+            android:text="5000000"/>
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:text="DVD Player"/>
+        <TextView
+            android:id="@+id/dvd2_num"
+            android:text="x 0"
+            android:paddingRight="20dp"/>
+        <TextView
+            android:id="@+id/dvd2_total"
+            android:width="100dp"
+            android:gravity="right"
+            android:text="5000000"/>
+    </TableRow>
+
+    <TableRow
+        android:background="?attr/colorButtonNormal"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:text="Total Pembelian"
+            android:layout_span="2"
+            android:textStyle="bold"
+            android:textSize="15dp" />
+        <TextView
+            android:id="@+id/grand_total"
+            android:width="100dp"
+            android:gravity="right"
+            android:text="5000000"
+            android:textStyle="bold"
+            android:textSize="15dp" />
+    </TableRow>
+
+</TableLayout>
